@@ -44,6 +44,7 @@ functions:
     provisionedConcurrency: 3 # optional, Count of provisioned lambda instances
     reservedConcurrency: 5 # optional, reserved concurrency limit for this function. By default, AWS uses account concurrency limit
     tracing: PassThrough # optional, overwrite, can be 'Active' or 'PassThrough'
+    alias: MyAlias # optional, creates an Alias for this function
 ```
 
 The `handler` property points to the file and module containing the code you want to run in your function.
